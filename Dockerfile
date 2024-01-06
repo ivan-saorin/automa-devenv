@@ -33,5 +33,15 @@ VOLUME /projects
 # Set the working directory
 WORKDIR /projects
 
+# Add the correct permission to the .ssh folder
+# Copy the entrypoint script
+COPY entrypoint.sh /entrypoint.sh
+
+# Make the entrypoint script executable
+RUN chmod +x /entrypoint.sh
+
+# Set the entry point to the entrypoint script
+ENTRYPOINT ["/entrypoint.sh"]
+
 # Start SSH service
 CMD ["/usr/sbin/sshd", "-D"]
