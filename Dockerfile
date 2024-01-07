@@ -1,5 +1,5 @@
-# Use Ubuntu 22.04.3 LTS as the base image
-FROM ubuntu:22.04.3
+# Use Ubuntu 22.04 as the base image
+FROM ubuntu:22.04
 
 # Install dependencies (add your specific dependencies here)
 # The list below starts with essential tools and then installs OpenSSH server
