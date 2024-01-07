@@ -7,7 +7,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     vim \
-    openssh-server # \
+    openssh-server 
+    # \
     # Add any additional dependencies below
     # [your-dependencies]
 
